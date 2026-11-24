@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ORBIT — 장현진 포트폴리오</title>
+  <meta name="description" content="현실에서 발견한 소재를 다양한 시각적 경험으로 풀어내는 디자이너 장현진의 포트폴리오">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@latest/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ───────── NAV ───────── -->
+  <header class="nav" id="nav">
+    <a href="#home" class="nav__logo">ORBIT</a>
+    <span class="nav__year">© 2026</span>
+    <nav class="nav__menu" aria-label="주 메뉴">
+      <a href="#home" data-section="home">HOME</a>
+      <a href="#about" data-section="about">ABOUT</a>
+      <a href="#works" data-section="works">WORKS</a>
+      <a href="#contact" data-section="contact">CONTACT</a>
+    </nav>
+    <span class="nav__w"><img src="assets/nav-dot.svg" alt="" width="8" height="8">W</span>
+  </header>
+
+  <main>
+    <!-- ───────── HOME / HERO ───────── -->
+    <section class="hero" id="home">
+      <canvas class="hero__canvas" id="orbit" aria-hidden="true"></canvas>
+      <div class="hero__ring" aria-hidden="true"><img src="assets/hero-ring.svg" alt="" width="903" height="571"></div>
+      <div class="hero__title">
+        <h1 class="trim">ORBIT</h1>
+        <p class="hero__keys">
+          <span>Center</span><i></i><span>Orbit</span><i></i><span>Expand</span>
+        </p>
+      </div>
+      <a href="#about" class="hero__scroll">Scroll <img src="assets/arrow-scroll.svg" alt="" width="13.9229" height="13.9229"></a>
+    </section>
+
+    <!-- ───────── ABOUT ───────── -->
+    <section class="about" id="about">
+      <p class="label">ABOUT *</p>
+
+      <div class="statement" id="statement" role="button" tabindex="0" aria-label="I am finding new in the familiar, refining ideas through exploration — 누르면 작업 이미지가 올라옵니다">
+        <!-- 피그마: 누르면 작업 이미지들이 아래에서 위로 스르륵 지나감 (Smart Animate 2s, ease-in-out) -->
+        <div class="statement__images" id="statementImages" aria-hidden="true"></div>
+        <div class="statement__line s1" data-drift="-1">
+          <span class="statement__iam trim">I am</span>
+          <span class="statement__big trim">Finding new</span>
+        </div>
+        <div class="statement__line s2" data-drift="1">
+          <span class="statement__big trim">in the familiar,</span>
+        </div>
+        <div class="statement__line s3" data-drift="-1">
+          <span class="statement__big trim">Refining ideas</span>
+          <span class="statement__tags">
+            <span class="trim">UIUX</span><span class="trim">Graphic</span><span class="trim">BX</span>
+          </span>
+        </div>
+        <div class="statement__line s4" data-drift="1">
+          <span class="statement__big trim">through exploration</span>
+        </div>
+      </div>
+
+      <div class="intro">
+        <div class="intro__text reveal">
+          <h2 class="intro__head trim">현실에서 발견한 소재를<br>다양한 시각적 경험으로 풀어냅니다.</h2>
+          <p class="intro__body">안녕하세요! 익숙한 것에서 새로운 가능성을 발견하는 디자이너 장현진 입니다. 저는 하나의 표현에 머무르지 않고 다양한 디자인을 비교하고 탐색하며, 작은 디테일을 관찰하고 끊임없이 다듬는 과정을 통해 저만의 시각적 언어를 만들어갑니다.</p>
+          <!-- PDF 드라이브 연결 전: 호버·프레스 상태만 동작 -->
+          <a href="#" class="pill" id="pdfBtn" aria-disabled="true">Download PDF
+            <span class="pill__icon">
+              <img class="pill__icon-light" src="assets/arrow-download.svg" alt="" width="17.4043" height="17.4043">
+              <img class="pill__icon-dark" src="assets/arrow-download-dark.svg" alt="" width="17.4043" height="17.4043">
+            </span>
+          </a>
+        </div>
+        <figure class="intro__photo reveal" id="photo">
+          <img class="intro__photo-img" src="assets/profile.jpg" alt="장현진 프로필 사진">
+          <img class="intro__photo-dot" src="assets/photo-dot.svg" alt="" width="90.6336" height="90.6336">
+        </figure>
+      </div>
+
+      <div class="info">
+        <div class="info__block reveal">
+          <h3 class="info__title">PROFILE *</h3>
+          <dl class="info__profile">
+            <dt>Name</dt><dd>장현진</dd>
+            <dt>Call</dt><dd>010 - 7XXX - 0XXX</dd>
+            <dt>E-Mail</dt><dd>satofeel@naver.com</dd>
+            <dt>Link</dt>
+            <dd class="info__links"><a href="#">INSTAGRAM</a><img src="assets/dot-filled.svg" alt="" width="4" height="4"><a href="#">LINKDIN</a></dd>
+          </dl>
+        </div>
+
+        <div class="info__block reveal">
+          <h3 class="info__title">EDUCATION *</h3>
+          <ul class="info__rows info__rows--edu">
+            <li><span>2027. 02</span><span>계원예술대학교 디지털미디어디자인과 전문학사 졸업</span></li>
+            <li><span>2025. 03</span><span>계원예술대학교 디지털미디어디자인과 입학</span></li>
+            <li><span>2025. 01</span><span>정현고등학교 졸업</span></li>
+          </ul>
+        </div>
+
+        <div class="info__block reveal">
+          <h3 class="info__title">TOOL*</h3>
+          <ul class="info__tools">
+            <li>Figma</li><li>Photoshop</li>
+            <li>Illustrator</li><li>After Effect</li>
+            <li>Premiere Pro</li><li>Chat GPT</li>
+            <li>Gemini</li><li>Midjourny</li>
+          </ul>
+        </div>
+
+        <div class="info__block reveal">
+          <h3 class="info__title">EXPERIENCE *</h3>
+          <ul class="info__rows info__rows--exp">
+            <li><span>2026. 11</span><span>2026 졸업심사 PT상 수상</span></li>
+            <li><span>2026. 09~11</span><span>2026 졸업전시위원회 전시팀 참여</span></li>
+            <li><span>2026. 08~11</span><span>구글 AI 기초 수강 및 자격 취득</span></li>
+            <li><span>2026. 06</span><span>32회 국제 커뮤니케이션 디자인 출품<br>61회 대한민국디자인전람회 출품</span></li>
+            <li><span>2025. 09~ 2026. 12</span><span>교내 동아리 ‘화록’ 부원 활동</span></li>
+            <li><span>2025. 06</span><span>1학년 1학기 영상기초 연합 PT 우수작</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────── WORKS ───────── -->
+    <section class="works" id="works">
+      <p class="label">WORKS *</p>
+      <div class="works__head">
+        <h2 class="works__title trim">편하게 스크롤하며 둘러보세요.<br>궁금한 작업은 클릭해보세요!</h2>
+        <div class="works__toggle" role="tablist" aria-label="보기 방식">
+          <button role="tab" aria-selected="true" data-view="grid"><span class="dot"></span>Grid</button>
+          <button role="tab" aria-selected="false" data-view="infinite"><span class="dot"></span>Infinite</button>
+        </div>
+      </div>
+
+      <div class="works__grid" id="grid"></div>
+
+      <div class="works__board" id="board" hidden>
+        <div class="works__plane" id="plane"></div>
+        <p class="works__hint">드래그해서 둘러보세요</p>
+      </div>
+    </section>
+
+    <!-- ───────── CONTACT ───────── -->
+    <footer class="contact" id="contact">
+      <div class="contact__lead">
+        <h2 class="contact__title">CONTACT</h2>
+        <p>Let’s Design together !<br>contact me at 10:00~23:00</p>
+      </div>
+      <div class="contact__info">
+        <a href="mailto:satofeel@naver.com">satofeel@naver.com</a>
+        <span>+82 010 - 7XXX - 0XXX</span>
+      </div>
+      <div class="contact__side">
+        <ul class="contact__links">
+          <li><a href="#">INSTAGRAM <img src="assets/arrow-instagram.svg" alt="" width="11.5195" height="11.5195"></a></li>
+          <li><a href="#">LINKDIN <img src="assets/arrow-link.svg" alt="" width="11.5195" height="11.5195"></a></li>
+          <li><a href="#">BEHANCE <img src="assets/arrow-link.svg" alt="" width="11.5195" height="11.5195"></a></li>
+        </ul>
+        <p class="contact__copy"><span>©</span><span>2026 Portfolio<br>All Right Reserved</span></p>
+      </div>
+    </footer>
+  </main>
+
+  <button class="top" id="top" aria-label="맨 위로">
+    <img src="assets/chevron-left.svg" alt="" width="9" height="15">
+    <span>TOP</span>
+  </button>
+
+  <!-- 작업 상세 (Infinite 보기에서 사용) -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modal-title"></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
